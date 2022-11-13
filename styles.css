@@ -1,12 +1,18 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    line-height: 1.6;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+/* Layout */
 
 .flex-between {
     display: flex;
     justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .column {
@@ -14,11 +20,131 @@
 }
 
 section {
-    margin: 3rem 0;
+    padding: 3rem 0;
     max-width: 1280px;
+}
+
+.gap-4 {
+    display: flex;
+    gap: 4rem;
 }
 
 .gap-2 {
     display: flex;
     gap: 2rem;
+}
+
+.gap-1 {
+    display: flex;
+    gap: 1rem;
+}
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+nav.flex-between {
+    padding-top: 2rem;
+    padding-inline: 1rem;
+    align-items: center;
+}
+
+.align-center button {
+    width: fit-content;
+}
+
+.hero-img {
+    width: 359px;
+    height: 325px;
+}
+
+
+/* Components */
+button {
+    background-color: hsl(12, 88%, 59%);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    border: none;
+}
+
+.card {
+    background-color: hsl(0, 0%, 98%);
+    margin-inline: 1rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.difference {
+    padding-inline-start: 1rem;
+}
+
+.row {
+    background-color: hsl(13, 100%, 96%);
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.row button {
+    padding: 0.5rem 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.dot {
+    border-radius: 50%;
+    border: 1px solid hsl(12, 88%, 59%);
+    width: 10px;
+    height: 10px;
+    margin-inline-end: 0.5rem;
+}
+
+.dot.filled {
+    background-color: hsl(12, 88%, 59%);
+}
+
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: hsl(228, 39%, 23%);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+
+p {
+    line-height: 1.5;
+    color:rgb(104, 104, 104);
+}
+
+
+
+
+/* Utilities */
+.px-2 {
+    padding-inline: 2rem;
+}
+
+.text-center {
+    text-align: center;
 }
